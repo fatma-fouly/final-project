@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <SCript src="./js/bootstrap.bundle.min.js"></SCript>
+    
+    <link rel="stylesheet" href="./css/style.css">
+     <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+     <link rel="stylesheet" href="./css/all.min.css"/>
+</head>
+<body class="signup-body">
+     <form  id="signup-sec" class="container w-75 m-auto border border-1 round-2">
+   <h3 class="text-center text-success mt-4"> Create your account  </h3>
+   <div class="contain  d-flex flex-column ">
+       <input id="userName" class=" w-75 m-auto my-2 "  type="text" placeholder=" Enter Your User Name" />
+    <input id="signup-email" class="email w-75 m-auto my-2 "  type="email" placeholder=" Enter Your Email" />
+    <input id="signup-pw" class="pw w-75 m-auto my-2 "  type="password" placeholder=" Enter Your Password" />
+    <input id="Repassword" class="Repassword w-75 m-auto my-2 "  type="password" placeholder=" Re enter your password" />
+    <button onclick="signUP(event)" id="inBtn" class="btn btn-success w-25 m-auto my-3 ">Sign Up</button>   
+    <p id="incorrectError" class="text-danger fw-bold text-center d-none"> incorrect signing up! Try again</p>
+    <p id="incorrectPw" class="text-danger fw-bold text-center d-none"> You must enter  a password from more than 8 characters</p>
+    <p id="isExistError" class="fw-bold text-danger text-center d-none">This Email Is Already Exist!</p>
+</div >
+<div class="text-center" >
+    <p class="text-center text-danger mt-2 fw-bold">Already have account? <a href="./login.html" class="text-success">Login</a></p>
+</div>
+
+   </form>
+   <div class="text-center bg-warning text-center d-none" id="msg1"> <p class="text-center">You Have To  Fill All Inputs</p>
+    <button  class="btn btn-dark" id="trybtn">Sign again</button>
+    </div>
+    <script src="./js/script.js" ></script>
+</body>
+</html>

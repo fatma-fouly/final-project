@@ -1,0 +1,134 @@
+.navbar {
+      background-color: #f1f1f1 !important;
+      /* position: fixed !important;
+      top: 0 !important;
+      width: 100% !important;
+      z-index: 1000 !important; */
+}
+.logo{
+    height: 65px;
+    width: 70px;
+    border-radius: 60%;
+    margin-right: 20px;
+}
+/*      Home       Section      */
+#home , #products {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#home >h2  , #products>h2  , #cart>h2{
+padding: 12px 0px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+color: green;
+}
+.carousel  {
+           margin: 20px 0px;
+}
+.carousel-item img{
+    height: 500px;
+    width: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
+/*      Footer       Section      */
+footer{
+  background-color: #f1f1f1;
+  padding: 40px 20px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: auto;
+}
+.footer-section {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+footer h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+footer p {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+  font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .logo {
+        height: 50px;
+        width: 55px;
+    }
+}
+  /*    Sign in Section      */
+.signin-body , .signup-body {
+ display: flex !important;
+ justify-content: center !important;  
+ align-items: center !important;
+ background-image: url(../assets/background.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-color: rgba(255, 255, 255, 0.25); 
+}
+.signin-body form , .signup-body form {
+  width: 60% !important;
+  margin: auto;
+  border: 2px green solid;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.signin-body input , .signup-body input {
+  border: 1px solid none;
+  border-radius: 10px;
+}
+
+      /*    Products Section      */
+#productContainer{
+  padding: 0 !important;
+}
+.product {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-right: 0px  !important;
+    padding-left: 0px   !important;
+    transition: 1s;
+  }
+
+.product:hover{
+  cursor: pointer;
+  scale: 105%;
+}
+
+#productImg{
+  height: 270px;
+  object-fit: contain;
+}
+.card {
+  padding: 0 !important;
+}
+
+      /*    Product   Details   Section      */
+
+.indiviualItem {
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.image img{
+  width: 100px !important;
+  height: 100px !important;
+}
